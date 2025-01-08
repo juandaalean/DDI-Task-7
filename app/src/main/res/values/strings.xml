@@ -2,7 +2,7 @@
     <string name="app_name">DDITask7</string>
 
     <string name="zapatillas_title">Zapatillas DC Shoes Slug Talla 43 Nuevas!!</string>
-    <string name="nombre_vendedor">Ramon Martinez</string>
+    <string name="nombre_vendedor">AndyRivera95</string>
     <string name="zapatillas_desc">43 · Nuevo con etiquetas · DC Shoes</string>
     <string name="precio">65,00€</string>
     <string name="protection_text">68,95 € Protección al comprador incluidas</string>
@@ -20,4 +20,5 @@
     <string name="description">Descripción</string>
     <string name="desde">Desde 0,00 €</string>
     <string name="envio">Envio</string>
+    <string name="anuncios_frecuentes">Anuncios frecuentes</string>
 </resources>

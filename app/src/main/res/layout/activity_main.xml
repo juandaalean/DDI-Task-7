@@ -191,14 +191,22 @@
                         app:layout_constraintStart_toEndOf="@id/foto_perfil"
                         app:layout_constraintTop_toBottomOf="@id/star_layout">
 
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/percha_icon"
+                            android:layout_marginHorizontal="@dimen/little_margin"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Anuncios frecuentes" />
+                            android:text="@string/anuncios_frecuentes" />
 
                     </LinearLayout>
 
                     <Button
+                        style="@style/enviar_button_style"
                         android:id="@+id/enviar_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -220,6 +228,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        style="@style/zapatillas_tittle_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/zapatillas_title"/>
@@ -230,8 +239,10 @@
                         android:text="@string/zapatillas_desc"/>
 
                     <TextView
+                        style="@style/precio_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/little_margin"
                         android:text="@string/precio"/>
 
                     <LinearLayout
@@ -240,14 +251,16 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            style="@style/proteccion_text_style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/protection_text"/>
+                            android:text="@string/protection_text"
+                            android:layout_marginEnd="@dimen/little_margin_corazon"/>
 
                         <ImageView
-                            android:layout_width="16dp"
-                            android:layout_height="16dp"
-                            android:src="@drawable/escudo_icon"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/escudo_vacio"
                             android:layout_gravity="center"/>
                     </LinearLayout>
 
@@ -363,9 +376,11 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
+                android:paddingHorizontal="@dimen/padding_layout"
                 android:orientation="horizontal">
                 
                 <TextView
+                    style="@style/envio_style"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="@string/envio"
@@ -393,6 +408,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            style="@style/oferta_button_style"
             android:id="@+id/offers_button"
             android:layout_width="185dp"
             android:layout_height="55dp"
@@ -400,6 +416,7 @@
             android:text="@string/oferta_button" />
 
         <Button
+            style="@style/comprar_button_style"
             android:id="@+id/buy_button"
             android:layout_width="185dp"
             android:layout_height="55dp"

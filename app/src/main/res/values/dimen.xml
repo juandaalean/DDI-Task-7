@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="toolbar_menu_end_margin">15dp</dimen>
-    <dimen name="text_main_size">18dp</dimen>
+
+    <dimen name="text_ultra_big_size">24dp</dimen>
+    <dimen name="text_big_size">18dp</dimen>
+    <dimen name="text_main_size">16dp</dimen>
+    <dimen name="text_little_size">12dp</dimen>
+
     <dimen name="padding_scroll">16dp</dimen>
     <dimen name="little_margin">8dp</dimen>
     <dimen name="little_margin_corazon">3dp</dimen>

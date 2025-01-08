@@ -1,19 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <style name="GlobalTextStyle">
+        <item name="android:fontFamily">@font/istok_web</item>
+        <item name="android:textSize">@dimen/text_main_size</item>
+    </style>
+
     <style name="toolbar_style">
         <item name="android:elevation">15dp</item>
     </style>
 
+    <style name="text_main_style">
+        <item name="android:textSize">@dimen/text_little_size</item>
+    </style>
+
     <style name="toolbar_text_style">
-        <item name="fontFamily">@font/istok_web</item>
-        <item name="android:textSize">@dimen/text_main_size</item>
+        <item name="android:textSize">@dimen/text_big_size</item>
         <item name="android:maxLines">1</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="corazon_text_style">
-        <item name="fontFamily">@font/istok_web</item>
-        <item name="android:textSize">@dimen/text_main_size</item>
         <item name="android:layout_gravity">center</item>
     </style>
+
+    <style name="zapatillas_tittle_style">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="precio_style">
+        <item name="android:textSize">@dimen/text_little_size</item>
+    </style>
+
+    <style name="envio_style">
+        <item name="android:textSize">@dimen/text_big_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="proteccion_text_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/md_theme_secondary</item>
+    </style>
+
+    <style name="enviar_button_style">
+        <item name="android:background">@drawable/shape_boton_esquinas_redondas_blanco</item>
+        <item name="android:padding">@dimen/little_margin</item>
+        <item name="backgroundTint"></item>
+        <item name="android:textColor">@color/md_theme_secondary</item>
+    </style>
+
+    <style name="oferta_button_style">
+        <item name="android:background">@drawable/shape_boton_esquinas_redondas_blanco</item>
+        <item name="backgroundTint"></item>
+        <item name="android:textColor">@color/md_theme_secondary</item>
+    </style>
+
+    <style name="comprar_button_style">
+        <item name="android:background">@drawable/shape_boton_esquinas_redondas_color</item>
+        <item name="backgroundTint"></item>
+
+    </style>
+
 </resources>
