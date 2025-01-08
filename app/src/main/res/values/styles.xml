@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="toolbar_style">
+        <item name="android:elevation">15dp</item>
+    </style>
+
+    <style name="toolbar_text_style">
+        <item name="fontFamily">@font/istok_web</item>
+        <item name="android:textSize">@dimen/text_main_size</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="corazon_text_style">
+        <item name="fontFamily">@font/istok_web</item>
+        <item name="android:textSize">@dimen/text_main_size</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>
