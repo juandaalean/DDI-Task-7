@@ -28,10 +28,13 @@
             android:text="@string/zapatillas_title" />
 
         <ImageView
+            android:id="@+id/toolbar_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginEnd="@dimen/toolbar_menu_end_margin"
+            android:clickable="true"
+            android:focusable="true"
             android:src="@drawable/baseline_more_vert_24" />
     </androidx.appcompat.widget.Toolbar>
 
@@ -98,8 +101,8 @@
 
                 <ImageView
                     android:id="@+id/corazon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:layout_marginHorizontal="@dimen/little_margin_corazon"
                     android:src="@drawable/baseline_favorite_border_24" />
 
@@ -299,6 +302,7 @@
                     android:text="@string/description_text" />
 
                 <TextView
+                    android:id="@+id/mas_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/little_margin_corazon"
