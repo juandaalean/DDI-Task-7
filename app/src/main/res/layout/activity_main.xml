@@ -97,8 +97,8 @@
 
                 <ImageView
                     android:id="@+id/corazon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:layout_marginHorizontal="@dimen/little_margin_corazon"
                     android:src="@drawable/baseline_favorite_border_24" />
 
@@ -295,6 +295,7 @@
                     android:text="@string/description_text" />
 
                 <TextView
+                    android:id="@+id/mas_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/little_margin"
@@ -308,7 +309,7 @@
                 android:orientation="vertical">
 
             </LinearLayout>
-            
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -319,13 +320,13 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/percha_icon"/>
-                
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginStart="@dimen/little_margin">
-                    
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -378,7 +379,7 @@
                 android:layout_height="35dp"
                 android:paddingHorizontal="@dimen/padding_layout"
                 android:orientation="horizontal">
-                
+
                 <TextView
                     style="@style/envio_style"
                     android:layout_width="0dp"
@@ -386,7 +387,7 @@
                     android:text="@string/envio"
                     android:layout_gravity="bottom"
                     android:layout_weight="1"/>
-                
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
