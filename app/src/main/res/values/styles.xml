@@ -15,7 +15,6 @@
     </style>
 
     <style name="toolbar_text_style">
-        <item name="android:textSize">@dimen/text_big_size</item>
         <item name="android:maxLines">1</item>
         <item name="android:textStyle">bold</item>
     </style>

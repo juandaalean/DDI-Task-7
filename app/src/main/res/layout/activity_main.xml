@@ -24,6 +24,7 @@
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:paddingStart="@dimen/little_margin"
             android:text="@string/zapatillas_title" />
 
         <ImageView
@@ -63,25 +64,25 @@
 
                     <ImageView
                         android:layout_width="350dp"
-                        android:layout_height="450dp"
+                        android:layout_height="400dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/zapatillas_2" />
 
                     <ImageView
                         android:layout_width="350dp"
-                        android:layout_height="450dp"
+                        android:layout_height="400dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/zapatillas_3" />
 
                     <ImageView
                         android:layout_width="350dp"
-                        android:layout_height="450dp"
+                        android:layout_height="400dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/zapatillas_4" />
 
                     <ImageView
                         android:layout_width="350dp"
-                        android:layout_height="450dp"
+                        android:layout_height="400dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/zapatillas_5" />
                 </LinearLayout>
@@ -125,8 +126,8 @@
 
                     <ImageView
                         android:id="@+id/foto_perfil"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/foto_perfil"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -189,7 +190,9 @@
                         android:id="@+id/anuncios_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/little_margin"
+                        android:layout_marginStart="@dimen/little_margin_corazon"
+                        android:layout_marginTop="@dimen/little_margin_corazon"
+                        android:background="@drawable/shape_anuncios_background"
                         android:orientation="horizontal"
                         app:layout_constraintStart_toEndOf="@id/foto_perfil"
                         app:layout_constraintTop_toBottomOf="@id/star_layout">
@@ -204,6 +207,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/little_margin"
                             android:text="@string/anuncios_frecuentes" />
 
                     </LinearLayout>
@@ -222,13 +226,13 @@
                 <com.google.android.material.divider.MaterialDivider
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/little_margin" />
+                    android:layout_marginVertical="@dimen/little_margin" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="@dimen/padding_layout">
+                    android:padding="@dimen/little_margin_corazon">
 
                     <TextView
                         style="@style/zapatillas_tittle_style"
@@ -275,7 +279,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:background="@color/material_dynamic_neutral90"
+                android:background="@color/md_theme_secondaryFixed"
                 android:orientation="vertical">
 
             </LinearLayout>
@@ -301,14 +305,14 @@
                     android:id="@+id/mas_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/little_margin"
-                    android:text="mas" />
+                    android:layout_marginTop="@dimen/little_margin_corazon"
+                    android:text="@string/mas" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:background="@color/material_dynamic_neutral90"
+                android:background="@color/md_theme_secondaryFixed"
                 android:orientation="vertical">
 
             </LinearLayout>
@@ -322,6 +326,7 @@
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
+                    android:background="@drawable/shape_iconos_redondos"
                     android:src="@drawable/percha_icon" />
 
                 <LinearLayout
@@ -351,6 +356,7 @@
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
+                    android:background="@drawable/shape_iconos_redondos"
                     android:src="@drawable/escudo_icon" />
 
                 <LinearLayout
@@ -375,7 +381,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:background="@color/material_dynamic_neutral90"
+                android:background="@color/md_theme_secondaryFixed"
                 android:orientation="vertical"></LinearLayout>
 
             <LinearLayout
@@ -406,6 +412,7 @@
         android:id="@+id/bottom_butons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/md_theme_surfaceBright"
         android:orientation="horizontal"
         android:padding="@dimen/padding_layout"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -414,7 +421,7 @@
         <Button
             android:id="@+id/offers_button"
             style="@style/oferta_button_style"
-            android:layout_width="185dp"
+            android:layout_width="160dp"
             android:layout_height="55dp"
             android:layout_marginEnd="@dimen/little_margin"
             android:text="@string/oferta_button" />
@@ -422,7 +429,7 @@
         <Button
             android:id="@+id/buy_button"
             style="@style/comprar_button_style"
-            android:layout_width="185dp"
+            android:layout_width="160dp"
             android:layout_height="55dp"
             android:text="@string/comprar_button" />
     </LinearLayout>
