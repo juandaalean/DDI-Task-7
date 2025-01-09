@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    //Menu Toolbar
+    //Menu Toolbar desplegable
     private fun showPopMenu(view: View) {
         val popupMenu = PopupMenu(this, view)
         val inflater: MenuInflater = popupMenu.menuInflater
