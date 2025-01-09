@@ -27,10 +27,13 @@
             android:text="@string/zapatillas_title" />
 
         <ImageView
+            android:id="@+id/toolbar_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginEnd="@dimen/toolbar_menu_end_margin"
+            android:clickable="true"
+            android:focusable="true"
             android:src="@drawable/baseline_more_vert_24" />
     </androidx.appcompat.widget.Toolbar>
 
@@ -38,8 +41,8 @@
         android:id="@+id/scroll_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_butons">
+        app:layout_constraintBottom_toTopOf="@+id/bottom_butons"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <LinearLayout
             android:id="@+id/main_scroll_layout"
@@ -192,11 +195,11 @@
                         app:layout_constraintTop_toBottomOf="@id/star_layout">
 
                         <ImageView
-                            android:layout_gravity="center"
                             android:layout_width="16dp"
                             android:layout_height="16dp"
-                            android:src="@drawable/percha_icon"
-                            android:layout_marginHorizontal="@dimen/little_margin"/>
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/little_margin"
+                            android:src="@drawable/percha_icon" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -206,8 +209,8 @@
                     </LinearLayout>
 
                     <Button
-                        style="@style/enviar_button_style"
                         android:id="@+id/enviar_button"
+                        style="@style/enviar_button_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/little_margin_corazon"
@@ -224,26 +227,26 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/padding_layout"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_layout">
 
                     <TextView
                         style="@style/zapatillas_tittle_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/zapatillas_title"/>
+                        android:text="@string/zapatillas_title" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/zapatillas_desc"/>
+                        android:text="@string/zapatillas_desc" />
 
                     <TextView
                         style="@style/precio_style"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/little_margin"
-                        android:text="@string/precio"/>
+                        android:text="@string/precio" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -254,14 +257,14 @@
                             style="@style/proteccion_text_style"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/protection_text"
-                            android:layout_marginEnd="@dimen/little_margin_corazon"/>
+                            android:layout_marginEnd="@dimen/little_margin_corazon"
+                            android:text="@string/protection_text" />
 
                         <ImageView
                             android:layout_width="18dp"
                             android:layout_height="18dp"
-                            android:src="@drawable/escudo_vacio"
-                            android:layout_gravity="center"/>
+                            android:layout_gravity="center"
+                            android:src="@drawable/escudo_vacio" />
                     </LinearLayout>
 
 
@@ -319,22 +322,23 @@
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:src="@drawable/percha_icon"/>
+                    android:src="@drawable/percha_icon" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginStart="@dimen/little_margin">
+                    android:layout_marginStart="@dimen/little_margin"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/armario_title"/>
+                        android:text="@string/armario_title" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/armario_text"/>
+                        android:text="@string/armario_text" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -347,22 +351,23 @@
                 <ImageView
                     android:layout_width="32dp"
                     android:layout_height="32dp"
-                    android:src="@drawable/escudo_icon"/>
+                    android:src="@drawable/escudo_icon" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginStart="@dimen/little_margin">
+                    android:layout_marginStart="@dimen/little_margin"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/tasa_title"/>
+                        android:text="@string/tasa_title" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/tasa_text"/>
+                        android:text="@string/tasa_text" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -371,29 +376,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:background="@color/material_dynamic_neutral90"
-                android:orientation="vertical">
-            </LinearLayout>
+                android:orientation="vertical"></LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:paddingHorizontal="@dimen/padding_layout"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/padding_layout">
 
                 <TextView
                     style="@style/envio_style"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/envio"
                     android:layout_gravity="bottom"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="@string/envio" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:text="@string/desde"
-                    />
+                    android:text="@string/desde" />
             </LinearLayout>
 
         </LinearLayout>
@@ -409,16 +412,16 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            style="@style/oferta_button_style"
             android:id="@+id/offers_button"
+            style="@style/oferta_button_style"
             android:layout_width="185dp"
             android:layout_height="55dp"
             android:layout_marginEnd="@dimen/little_margin"
             android:text="@string/oferta_button" />
 
         <Button
-            style="@style/comprar_button_style"
             android:id="@+id/buy_button"
+            style="@style/comprar_button_style"
             android:layout_width="185dp"
             android:layout_height="55dp"
             android:text="@string/comprar_button" />

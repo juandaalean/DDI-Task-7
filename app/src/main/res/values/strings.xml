@@ -21,4 +21,6 @@
     <string name="desde">Desde 0,00 €</string>
     <string name="envio">Envio</string>
     <string name="anuncios_frecuentes">Anuncios frecuentes</string>
+    <string name="denunciar">Denunciar</string>
+    <string name="compartir">Compartir</string>
 </resources>
